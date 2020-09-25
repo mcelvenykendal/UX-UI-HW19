@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+.heading {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+img {
+    max-width: 100%;
+
+}
+.name{
+    font-family: serif;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    font-size: 36px;
+    line-height: 48px;
+    margin:0;
+    margin-bottom: 40px;
+
+}
+.name-container{
+    background: #657351;
+    padding-top:31px;
+    padding-left: 80px;
+
+}
+.image-me{
+    width: 455px;
+
+}
+.aboutme{
+    margin-left: 30px;
+}
+.first-of-three{
+        width: 455px;
+        margin-left: 20px;
+    
+}
+.h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+
+}
+.imageLabel{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.parentContainer { 
+    padding:15px
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 50px;
+}
+.nav-item{ 
+    margin: 20px;
+    list-style-type: none;
+}
+.logo{
+    background-color: black;
+    color: white;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family: helvetica, arial, sans-serif;
+    color: white;
+    grid-template-areas:
+    "hover"
+    "disabled"
+    ;
+    height: 500px;
+  }
+  .hoverMe {
+    grid-area: hover;
+    background-color: blanchedalmond;
+    color: rgb(12, 7, 7);
+    width: 150px;
+    text-align: center; 
+    height: 50px;
+    transition: 0.3s;
+  }
+  .hoverMe:hover {
+    background-color: #657351;
+    color: white;
+  
+  }
+  .workItem{
+      padding: 20px;
+  }
+  .nav-link
+  {
+      text-decoration: none;
+      color: black; 
+
+
+  }
+  .nav-link:hover{
+      border-bottom: 2px solid  #657351;
+      
+  }
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    .workImage {height: 200px;}
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  .panel, .flip {
+    padding: 5px;
+    text-align: left;
+    width: 400px;
+    background-color: white;
+    border: solid 1px black;
+  }
+  
+  .panel {
+    padding: 50px;
+    display: none;
+  }
